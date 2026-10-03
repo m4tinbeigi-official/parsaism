@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پارسا | PARSA (@parsaism) | پروپوزال حامی مالی و همکاری فرهنگی</title>
+    <meta name="description" content="پروپوزال مینیمال همکاری فرهنگی و جذب اسپانسر برای پارسا (@parsaism). رسانه‌ای در تلاقی منطق سرد و ابیات سوزان.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #090a0f;
+            --surface: #11131a;
+            --border: #1f2330;
+            --text: #f1f5f9;
+            --muted: #94a3b8;
+            --subtle: #64748b;
+            --accent: #e2e8f0;
+            --accent-line: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: 0 !important;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 40px 20px 80px;
+            min-height: 100vh;
+        }
+
+        .wrapper {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tagline {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--subtle);
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .handle {
+            font-size: 14px;
+            color: var(--muted);
+            direction: ltr;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+
+        .handle:hover {
+            color: #fff;
+        }
+
+        .quote-box {
+            font-size: 15px;
+            color: #cbd5e1;
+            padding: 16px 20px;
+            background: var(--surface);
+            border-right: 2px solid var(--accent);
+            border-radius: 4px;
+            margin-bottom: 20px;
+            line-height: 1.9;
+        }
+
+        .en-motto {
+            font-size: 13px;
+            color: var(--subtle);
+            direction: ltr;
+            text-align: left;
+            margin-top: 6px;
+            font-style: italic;
+        }
+
+        section {
+            margin-bottom: 45px;
+        }
+
+        h2 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h2::before {
+            content: "";
+            width: 4px;
+            height: 16px;
+            background: var(--accent);
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        p {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.9;
+            margin-bottom: 14px;
+        }
+
+        .identity-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .identity-list li {
+            font-size: 13.5px;
+            color: #cbd5e1;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .identity-list li::before {
+            content: "•";
+            color: var(--subtle);
+            font-weight: bold;
+        }
+
+        .packages-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .package-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 22px;
+            transition: border-color 0.2s;
+        }
+
+        .package-item:hover {
+            border-color: var(--accent-line);
+        }
+
+        .pkg-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .pkg-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .pkg-rate {
+            font-size: 15px;
+            font-weight: 700;
+            color: #e2e8f0;
+        }
+
+        .pkg-desc {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .pkg-details {
+            font-size: 12.5px;
+            color: var(--subtle);
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px 24px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .cta-desc {
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .btn-contact {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f8fafc;
+            color: #090a0f;
+            text-decoration: none;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-size: 13.5px;
+            font-weight: 700;
+            transition: all 0.2s;
+        }
+
+        .btn-contact:hover {
+            background: #e2e8f0;
+            transform: translateY(-1px);
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--subtle);
+            border-top: 1px solid var(--border);
+            padding-top: 25px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="tagline">پروپوزال رسمی همکاری و جذب حامی مالی</div>
+        <h1>پارسا</h1>
+        <a href="https://instagram.com/PARSAISM" target="_blank" rel="noopener noreferrer" class="handle">@PARSAISM</a>
+
+        <div class="quote-box">
+            تلاقی تامل، تعقل و واژه‌ها؛ جایی که منطق سرد با شور سرکش ادبیات پیوند می‌خورد.
+            <div class="en-motto">Between cold logic and burning verses.</div>
+        </div>
+    </header>
+
+    <section>
+        <h2>هویت رسانه و پرسونای مخاطب</h2>
+        <p>
+            این صفحه بستری گزیده‌گو برای مخاطبانی است که ارزش تامل، زبان فاخر و نگاه عمیق به انسان و جهان را درک می‌کنند. در دورانی که شبکه‌های اجتماعی سرشار از هیاهو و سطحی‌نگری است، این فضا پناهگاهی برای اندیشه، ادبیات و تحلیل‌های بی‌شتاب به شمار می‌آید.
+        </p>
+        <ul class="identity-list">
+            <li><strong>مخاطبان هدف:</strong> اهالی قلم، پژوهشگران، علاقه‌مندان به ادبیات جدی، فلسفه و نگاه ساختارمند به جهان.</li>
+            <li><strong>اصل انحصار و عدم آلودگی بصری:</strong> در این فضا هیچ تبلیغ زرد، طرح‌های سریع ثروتمند شدن، بازی یا محتوای بی‌کیفیت منتشر نمی‌شود.</li>
+            <li><strong>اعتماد عمیق به قلم:</strong> معرفی هر برند یا اثر، پس از ارزیابی کیفی و هم‌راستایی آن با ارزش‌های فکری رسانه صورت می‌پذیرد.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>برندهای متناسب برای حمایت و همکاری</h2>
+        <p>
+            همکاری‌ها به گونه‌ای گزینش می‌شوند که حضور برند حامی، به اصالت و اعتبار دوطرفه منجر شود:
+        </p>
+        <ul class="identity-list">
+            <li><strong>نشر و ادبیات:</strong> انتشارات مستقل، ناشران ادبیات داستانی و ترجمه، مجلات فرهنگی و هنری.</li>
+            <li><strong>صدا و پادکست:</strong> پلتفرم‌های کتاب صوتی، پادکست‌های فلسفی و اندیشه‌ای، استودیوهای روایت صوتی.</li>
+            <li><strong>فضاها و سبک زندگی فکری:</strong> کافه‌کتاب‌ها، فضاهای فرهنگی، نوشت‌افزارهای دست‌ساز، ابزارهای نویسندگی و قهوه تخصصی.</li>
+            <li><strong>حامیان مستقل (Patrons):</strong> حامیان خصوصی هنر و ادبیات که مایل به بقا و خلق آثار مستقل هستند.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>مدل‌های مشارکت و پکیج‌ها</h2>
+        <div class="packages-container">
+            <div class="package-item">
+                <div class="pkg-top">
+                    <span class="pkg-title">۱. معرفی روایی اثر یا محصول (Narrative Feature)</span>
+                    <span class="pkg-rate">۳,۰۰۰,۰۰۰ تومان</span>
+                </div>
+                <div class="pkg-desc">
+                    پرداخت عمیق به یک کتاب، محصول هنری یا خدمت فرهنگی در بستر روایتی تامل‌برانگیز و متنی مستقل.
+                </div>
+                <div class="pkg-details">
+                    شامل متن اختصاصی با زبان فاخر، عکاسی مینیمال و بازتاب در کانال‌های ارتباطی منتخب.
+                </div>
+            </div>
+
+            <div class="package-item">
+                <div class="pkg-top">
+                    <span class="pkg-title">۲. حامی فصلی آثار (Quarterly Patronage)</span>
+                    <span class="pkg-rate">۸,۰۰۰,۰۰۰ تومان / ماهانه</span>
+                </div>
+                <div class="pkg-desc">
+                    حمایت انحصاری از تولید یادداشت‌ها و محتواهای ادبی به مدت ۳ ماه متوالی به عنوان حامی اصلی اندیشه.
+                </div>
+                <div class="pkg-details">
+                    درج نام و پیام برند در آغاز و پایان دست‌نوشته‌ها، عدم پذیرش برندهای موازی، و قدردانی مستمر سازمانی.
+                </div>
+            </div>
+
+            <div class="package-item">
+                <div class="pkg-top">
+                    <span class="pkg-title">۳. همکاری رویدادی و صوتی (Audio & Cultural Session)</span>
+                    <span class="pkg-rate">توافقی</span>
+                </div>
+                <div class="pkg-desc">
+                    حضور، خوانش متن، داوری یا معرفی در نشست‌های کتاب‌خوانی، کافه‌ها، ورکشاپ‌ها یا پادکست‌های فرهنگی.
+                </div>
+                <div class="pkg-details">
+                    ویژه کافه‌کتاب‌ها، خانه‌های هنر و پلتفرم‌های تولید پادکست و نریشن.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-section">
+        <div class="cta-title">ارتباط و هماهنگی همکاری</div>
+        <div class="cta-desc">
+            جهت گفتگو پیرامون پروژه‌ها، دریافت نمونه متن‌ها و نهایی‌سازی پکیج حامی مالی، از طریق تلگرام یا ایمیل زیر با مدیریت روابط عمومی در ارتباط باشید.
+        </div>
+        <a href="https://t.me/m4tinbeigipv" target="_blank" rel="noopener noreferrer" class="btn-contact">
+            ارسال پیام در تلگرام: @m4tinbeigipv
+        </a>
+    </div>
+
+    <footer>
+        <p>مدیریت و برنامه‌ریزی اسپانسرشیپ: <b>ریک سانچز</b></p>
+        <p style="margin-top: 6px;">تمام حقوق این اثر متعلق به رسانه پارسا (@PARSAISM) است.</p>
+    </footer>
+</div>
+</body>
+</html>
