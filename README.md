@@ -1,8 +1,24 @@
-# PARSAISM (@parsaism) - Official Sponsor & Cultural Proposal
+# PARSAISM (@parsaism) - Official Sponsor Proposal (Next 10 Videos)
 
-صفحه رسمی پروپوزال، حامی مالی و همکاری‌های فرهنگی **پارسا** (`@parsaism`).
+پروپوزال رسمی جذب اسپانسر نقدی برای **۱۰ ویدیوی آینده پارسا** (`@parsaism`).
 
-- **تگ‌لاین:** تلاقی منطق سرد و ابیات سوزان (Between cold logic and burning verses)
+## 📊 مشخصات و آمار زنده پیج
+- **آیدی:** [@PARSAISM](https://instagram.com/PARSAISM)
+- **نام:** P A R S A (پارسا)
+- **تعداد فالوور:** ۴۶۲ نفر (جامعه مخاطبان خاص و تعامل نزدیک)
+- **فالویینگ:** ۱٬۰۰۵ نفر
+- **تعداد پست‌ها:** ۱۸ پست
+- **شعار:** «تلاقی منطق سرد و ابیات سوزان» (Between cold logic and burning verses)
 - **زمینه فعالیت:** ادبیات، شعر و هنر کلمات، فلسفه، اندیشه و نقد فرهنگی
-- **وب‌سایت اختصاصی:** [https://m4tinbeigi-official.github.io/parsaism/](https://m4tinbeigi-official.github.io/parsaism/)
+
+## 🎬 پکیج اسپانسرشیپ ۱۰ ویدیوی آینده
+- **تعهد ۱:** درج لوگوی رسمی برند اسپانسر در گوشه تمامی ۱۰ ویدیوی بعدی
+- **تعهد ۲:** منشن و تگ آیدی پیج اینستاگرام اسپانسر در کپشن هر ۱۰ ویدیو
+- **تعهد ۳:** انحصار کامل دسته‌بندی تجاری در طول انتشار ۱۰ ویدیو
+- **تعهد ۴:** ماندگاری دائمی ویدیوها در فید پیج
+- **تعرفه پیشنهادی پکیج کامل:** ۵,۰۰۰,۰۰۰ تومان نقدی (تسویه دو مرحله‌ای ۵۰/۵۰)
+
+## 🌐 لینک‌های زنده
+- **سایت اختصاصی:** [https://m4tinbeigi-official.github.io/parsaism/](https://m4tinbeigi-official.github.io/parsaism/)
+- **لینک کوتاه:** [https://B2n.ir/parsaism-proposal](https://B2n.ir/parsaism-proposal)
 - **مدیریت و هماهنگی:** ریک سانچز ([@m4tinbeigipv](https://t.me/m4tinbeigipv) / `m4tinbeigi@gmail.com`)

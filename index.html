@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پارسا | PARSA (@parsaism) | پروپوزال حامی مالی و همکاری فرهنگی</title>
-    <meta name="description" content="پروپوزال مینیمال همکاری فرهنگی و جذب اسپانسر برای پارسا (@parsaism). رسانه‌ای در تلاقی منطق سرد و ابیات سوزان.">
+    <title>پارسا | PARSA (@parsaism) | پروپوزال رسمی اسپانسرشیپ ۱۰ ویدیوی آینده</title>
+    <meta name="description" content="پروپوزال رسمی حامی مالی و جذب اسپانسر نقدی برای ۱۰ ویدیوی آینده پارسا (@parsaism). درج لوگو در ویدیو و منشن آیدی در کپشن.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #090a0f;
-            --surface: #11131a;
-            --border: #1f2330;
-            --text: #f1f5f9;
+            --bg: #07090e;
+            --surface: #0f121a;
+            --surface-hover: #151a24;
+            --border: #1e2433;
+            --border-highlight: #334155;
+            --text: #f8fafc;
             --muted: #94a3b8;
             --subtle: #64748b;
-            --accent: #e2e8f0;
-            --accent-line: #334155;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.15);
+            --gold: #f59e0b;
         }
 
         * {
@@ -42,52 +45,57 @@
         }
 
         header {
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             padding-bottom: 30px;
             border-bottom: 1px solid var(--border);
         }
 
-        .tagline {
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--subtle);
-            text-transform: uppercase;
-            margin-bottom: 12px;
+        .badge-callout {
+            display: inline-block;
+            font-size: 11.5px;
+            font-weight: 700;
+            color: var(--accent);
+            background: var(--accent-glow);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 3px 12px;
+            border-radius: 9999px;
+            margin-bottom: 14px;
         }
 
         h1 {
             font-size: 28px;
-            font-weight: 800;
+            font-weight: 900;
             color: #fff;
             margin-bottom: 4px;
         }
 
         .handle {
-            font-size: 14px;
-            color: var(--muted);
+            font-size: 14.5px;
+            color: var(--accent);
             direction: ltr;
             display: inline-block;
             margin-bottom: 20px;
             text-decoration: none;
+            font-weight: 700;
         }
 
         .handle:hover {
-            color: #fff;
+            text-decoration: underline;
         }
 
         .quote-box {
-            font-size: 15px;
+            font-size: 14.5px;
             color: #cbd5e1;
             padding: 16px 20px;
             background: var(--surface);
-            border-right: 2px solid var(--accent);
-            border-radius: 4px;
-            margin-bottom: 20px;
+            border-right: 3px solid var(--accent);
+            border-radius: 6px;
+            margin-bottom: 24px;
             line-height: 1.9;
         }
 
         .en-motto {
-            font-size: 13px;
+            font-size: 12.5px;
             color: var(--subtle);
             direction: ltr;
             text-align: left;
@@ -95,15 +103,47 @@
             font-style: italic;
         }
 
+        /* Metrics Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 35px;
+        }
+
+        .metric-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px 12px;
+            text-align: center;
+        }
+
+        .metric-num {
+            font-size: 22px;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .metric-num.highlight {
+            color: var(--accent);
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+
         section {
-            margin-bottom: 45px;
+            margin-bottom: 40px;
         }
 
         h2 {
             font-size: 17px;
-            font-weight: 700;
+            font-weight: 800;
             color: #fff;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -119,97 +159,114 @@
         }
 
         p {
-            font-size: 14px;
+            font-size: 13.5px;
             color: var(--muted);
             line-height: 1.9;
             margin-bottom: 14px;
         }
 
-        .identity-list {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        .identity-list li {
-            font-size: 13.5px;
-            color: #cbd5e1;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
-
-        .identity-list li::before {
-            content: "•";
-            color: var(--subtle);
-            font-weight: bold;
-        }
-
-        .packages-container {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
+        /* The Main 10-Video Sponsorship Box */
+        .sponsorship-main-card {
+            background: linear-gradient(180deg, #131722 0%, #0d1017 100%);
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            border-radius: 16px;
+            padding: 26px 22px;
             margin-top: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
         }
 
-        .package-item {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 22px;
-            transition: border-color 0.2s;
-        }
-
-        .package-item:hover {
-            border-color: var(--accent-line);
-        }
-
-        .pkg-top {
+        .sponsorship-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 8px;
+            margin-bottom: 14px;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 10px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 14px;
         }
 
-        .pkg-title {
-            font-size: 15px;
-            font-weight: 700;
+        .sponsorship-title {
+            font-size: 18px;
+            font-weight: 900;
             color: #fff;
         }
 
-        .pkg-rate {
-            font-size: 15px;
-            font-weight: 700;
-            color: #e2e8f0;
+        .sponsorship-badge {
+            background: rgba(245, 158, 11, 0.15);
+            border: 1px solid rgba(245, 158, 11, 0.35);
+            color: var(--gold);
+            font-size: 11.5px;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 6px;
         }
 
-        .pkg-desc {
+        .sponsorship-price {
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--accent);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+        }
+
+        .sponsorship-price span {
             font-size: 13px;
             color: var(--muted);
-            line-height: 1.7;
+            font-weight: 500;
+        }
+
+        .deliverables-list {
+            list-style: none;
+            margin-bottom: 22px;
+        }
+
+        .deliverables-list li {
+            font-size: 13.5px;
+            color: #cbd5e1;
             margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.7;
         }
 
-        .pkg-details {
-            font-size: 12.5px;
-            color: var(--subtle);
-            line-height: 1.6;
+        .check-icon {
+            color: #38bdf8;
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 1px;
         }
 
-        .cta-section {
+        .sponsor-fit-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+            margin-top: 24px;
+        }
+
+        .sponsor-fit-title {
+            font-size: 14px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .cta-box {
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 14px;
-            padding: 28px 24px;
+            padding: 28px 20px;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 40px;
         }
 
         .cta-title {
             font-size: 17px;
-            font-weight: 700;
+            font-weight: 800;
             color: #fff;
             margin-bottom: 8px;
         }
@@ -219,25 +276,28 @@
             color: var(--muted);
             margin-bottom: 20px;
             line-height: 1.8;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .btn-contact {
+        .btn-reserve {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: #f8fafc;
-            color: #090a0f;
+            background: #38bdf8;
+            color: #07090e;
             text-decoration: none;
-            padding: 10px 22px;
+            padding: 11px 26px;
             border-radius: 8px;
-            font-size: 13.5px;
-            font-weight: 700;
+            font-size: 14px;
+            font-weight: 800;
             transition: all 0.2s;
         }
 
-        .btn-contact:hover {
-            background: #e2e8f0;
-            transform: translateY(-1px);
+        .btn-reserve:hover {
+            background: #7dd3fc;
+            transform: translateY(-2px);
         }
 
         footer {
@@ -253,7 +313,7 @@
 <body>
 <div class="wrapper">
     <header>
-        <div class="tagline">پروپوزال رسمی همکاری و جذب حامی مالی</div>
+        <div class="badge-callout">پروپوزال رسمی حامی مالی و جذب اسپانسر نقدی</div>
         <h1>پارسا</h1>
         <a href="https://instagram.com/PARSAISM" target="_blank" rel="noopener noreferrer" class="handle">@PARSAISM</a>
 
@@ -261,83 +321,85 @@
             تلاقی تامل، تعقل و واژه‌ها؛ جایی که منطق سرد با شور سرکش ادبیات پیوند می‌خورد.
             <div class="en-motto">Between cold logic and burning verses.</div>
         </div>
+
+        <!-- Official Live Stats Grid -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-num highlight">۴۶۲</div>
+                <div class="metric-label">دنبال‌کننده (فالوور)</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-num">۱٬۰۰۵</div>
+                <div class="metric-label">دنبال‌شده (فالویینگ)</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-num">۱۸</div>
+                <div class="metric-label">تعداد پست‌ها</div>
+            </div>
+        </div>
     </header>
 
     <section>
-        <h2>هویت رسانه و پرسونای مخاطب</h2>
+        <h2>پکیج اختصاصی: اسپانسرشیپ ۱۰ ویدیوی آینده</h2>
         <p>
-            این صفحه بستری گزیده‌گو برای مخاطبانی است که ارزش تامل، زبان فاخر و نگاه عمیق به انسان و جهان را درک می‌کنند. در دورانی که شبکه‌های اجتماعی سرشار از هیاهو و سطحی‌نگری است، این فضا پناهگاهی برای اندیشه، ادبیات و تحلیل‌های بی‌شتاب به شمار می‌آید.
+            این پکیج به صورت انحصاری برای یک برند طراحی شده تا در یک دوره ۱۰ ویدیویی پیوسته، به عنوان حامی رسمی پارسا حضور داشته باشد و اعتبار، اصالت و پیوند ماندگاری با جامعه مخاطبان بسازد.
         </p>
-        <ul class="identity-list">
-            <li><strong>مخاطبان هدف:</strong> اهالی قلم، پژوهشگران، علاقه‌مندان به ادبیات جدی، فلسفه و نگاه ساختارمند به جهان.</li>
-            <li><strong>اصل انحصار و عدم آلودگی بصری:</strong> در این فضا هیچ تبلیغ زرد، طرح‌های سریع ثروتمند شدن، بازی یا محتوای بی‌کیفیت منتشر نمی‌شود.</li>
-            <li><strong>اعتماد عمیق به قلم:</strong> معرفی هر برند یا اثر، پس از ارزیابی کیفی و هم‌راستایی آن با ارزش‌های فکری رسانه صورت می‌پذیرد.</li>
-        </ul>
-    </section>
 
-    <section>
-        <h2>برندهای متناسب برای حمایت و همکاری</h2>
-        <p>
-            همکاری‌ها به گونه‌ای گزینش می‌شوند که حضور برند حامی، به اصالت و اعتبار دوطرفه منجر شود:
-        </p>
-        <ul class="identity-list">
-            <li><strong>نشر و ادبیات:</strong> انتشارات مستقل، ناشران ادبیات داستانی و ترجمه، مجلات فرهنگی و هنری.</li>
-            <li><strong>صدا و پادکست:</strong> پلتفرم‌های کتاب صوتی، پادکست‌های فلسفی و اندیشه‌ای، استودیوهای روایت صوتی.</li>
-            <li><strong>فضاها و سبک زندگی فکری:</strong> کافه‌کتاب‌ها، فضاهای فرهنگی، نوشت‌افزارهای دست‌ساز، ابزارهای نویسندگی و قهوه تخصصی.</li>
-            <li><strong>حامیان مستقل (Patrons):</strong> حامیان خصوصی هنر و ادبیات که مایل به بقا و خلق آثار مستقل هستند.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>مدل‌های مشارکت و پکیج‌ها</h2>
-        <div class="packages-container">
-            <div class="package-item">
-                <div class="pkg-top">
-                    <span class="pkg-title">۱. معرفی روایی اثر یا محصول (Narrative Feature)</span>
-                    <span class="pkg-rate">۳,۰۰۰,۰۰۰ تومان</span>
+        <div class="sponsorship-main-card">
+            <div class="sponsorship-header">
+                <div>
+                    <div class="sponsorship-title">بسته حمایتی ۱۰ ویدیوی بعدی</div>
+                    <div style="font-size: 12px; color: var(--subtle); margin-top: 3px;">همکاری پیوسته و اختصاصی با یک برند منتخب</div>
                 </div>
-                <div class="pkg-desc">
-                    پرداخت عمیق به یک کتاب، محصول هنری یا خدمت فرهنگی در بستر روایتی تامل‌برانگیز و متنی مستقل.
-                </div>
-                <div class="pkg-details">
-                    شامل متن اختصاصی با زبان فاخر، عکاسی مینیمال و بازتاب در کانال‌های ارتباطی منتخب.
-                </div>
+                <div class="sponsorship-badge">انحصار دسته‌بندی تجاری</div>
             </div>
 
-            <div class="package-item">
-                <div class="pkg-top">
-                    <span class="pkg-title">۲. حامی فصلی آثار (Quarterly Patronage)</span>
-                    <span class="pkg-rate">۸,۰۰۰,۰۰۰ تومان / ماهانه</span>
-                </div>
-                <div class="pkg-desc">
-                    حمایت انحصاری از تولید یادداشت‌ها و محتواهای ادبی به مدت ۳ ماه متوالی به عنوان حامی اصلی اندیشه.
-                </div>
-                <div class="pkg-details">
-                    درج نام و پیام برند در آغاز و پایان دست‌نوشته‌ها، عدم پذیرش برندهای موازی، و قدردانی مستمر سازمانی.
-                </div>
+            <div class="sponsorship-price">
+                ۵,۰۰۰,۰۰۰ <span>تومان (پکیج کامل ۱۰ ویدیو)</span>
             </div>
 
-            <div class="package-item">
-                <div class="pkg-top">
-                    <span class="pkg-title">۳. همکاری رویدادی و صوتی (Audio & Cultural Session)</span>
-                    <span class="pkg-rate">توافقی</span>
-                </div>
-                <div class="pkg-desc">
-                    حضور، خوانش متن، داوری یا معرفی در نشست‌های کتاب‌خوانی، کافه‌ها، ورکشاپ‌ها یا پادکست‌های فرهنگی.
-                </div>
-                <div class="pkg-details">
-                    ویژه کافه‌کتاب‌ها، خانه‌های هنر و پلتفرم‌های تولید پادکست و نریشن.
-                </div>
+            <ul class="deliverables-list">
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>درج لوگوی رسمی اسپانسر:</strong> لوگوی شفاف برند شما در تمامی ۱۰ ویدیوی بعدی به شکل مینی‌مال و حرفه‌ای در گوشه قاب ویدیو قرار می‌گیرد.</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>منشن آیدی پیج در کپشن:</strong> در کپشن هر ۱۰ ویدیو، آیدی اینستاگرام برند اسپانسر به عنوان حامی اثر با تگ مستقیم درج می‌شود.</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>انحصار کامل در دوره:</strong> در طول این ۱۰ ویدیو، هیچ برند یا لوگوی دیگری تبلیغ نخواهد شد و تمرکز رسانه‌ای منحصراً روی نام برند شما خواهد بود.</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>ماندگاری دائمی ویدیوها:</strong> ویدیوها به صورت پست فید دائمی منتشر شده و پس از اتمام کمپین نیز از صفحه حذف نخواهند شد.</span>
+                </li>
+            </ul>
+
+            <div style="border-top: 1px dashed var(--border); padding-top: 14px; font-size: 12.5px; color: var(--subtle); line-height: 1.7;">
+                • نحوه تسویه: ۵۰٪ پیش‌پرداخت هنگام عقد توافق و ۵۰٪ همزمان با انتشار ویدیوی پنجم.<br>
+                • زمان‌بندی: انتشار طبق جدول مدون با هماهنگی نماینده برند.
             </div>
         </div>
     </section>
 
-    <div class="cta-section">
-        <div class="cta-title">ارتباط و هماهنگی همکاری</div>
+    <section>
+        <h2>برندهای متناسب برای این همکاری</h2>
+        <div class="sponsor-fit-box">
+            <div class="sponsor-fit-title">چه برندهایی بیشترین بازدهی را از این اسپانسرشیپ دریافت می‌کنند؟</div>
+            <p style="margin-bottom: 0;">
+                کافه‌کتاب‌ها و فضاهای فرهنگی هنری، ناشران مستقل ادبیات و هنر، برندهای نوشت‌افزار خاص و دفاتر دست‌ساز، پلتفرم‌های کتاب صوتی و پادکست، و کسب‌وکارهایی که می‌خواهند نام خود را در فضایی آرام، فرهیخته و عاری از حواشی زرد اینستاگرامی مطرح کنند.
+            </p>
+        </div>
+    </section>
+
+    <div class="cta-box">
+        <div class="cta-title">رزرو و نهایی‌سازی اسپانسرشیپ ۱۰ ویدیو</div>
         <div class="cta-desc">
-            جهت گفتگو پیرامون پروژه‌ها، دریافت نمونه متن‌ها و نهایی‌سازی پکیج حامی مالی، از طریق تلگرام یا ایمیل زیر با مدیریت روابط عمومی در ارتباط باشید.
+            برای رزرو پکیج، بررسی تطابق دسته‌بندی برند و ارسال فایل لوگو با مدیریت هماهنگی در ارتباط باشید.
         </div>
-        <a href="https://t.me/m4tinbeigipv" target="_blank" rel="noopener noreferrer" class="btn-contact">
+        <a href="https://t.me/m4tinbeigipv" target="_blank" rel="noopener noreferrer" class="btn-reserve">
             ارسال پیام در تلگرام: @m4tinbeigipv
         </a>
     </div>
